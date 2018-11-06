@@ -5,6 +5,13 @@ module LinkedList =
         | Empty
         | Node of value: 'T * next: LinkedList<'T>
 
+    let rec append el list =
+        match list with
+            | Empty -> Node (value = el, next = Empty)
+            | Node (value, next) -> Node (value = value, next = (append el next))
+
+    let prepend el list = Node (value = el, next = list)
+
     let rec printList l =
         match l with
             | Empty -> printfn "No more?!"
