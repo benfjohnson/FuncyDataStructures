@@ -8,8 +8,6 @@ module LinkedList =
     let rec printList l =
         match l with
             | Empty -> printfn "No more?!"
-            | Node (value, next) -> printfn "We eatin'!! %O" value
-        |> ignore
-        match l with
-            | Empty -> ()
-            | Node (_, next) -> printList next
+            | Node (value, next) ->
+                printfn "We eatin'!! %O" value
+                printList next

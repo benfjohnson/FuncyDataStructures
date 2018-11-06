@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="LinkedList.fs" />
     <Compile Include="BinaryTree.fs" />
+    <Compile Include="LinkedList.fs" />
   </ItemGroup>
 
 </Project>
