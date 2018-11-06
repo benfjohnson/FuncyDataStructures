@@ -1,1 +1,1 @@
-Learning F# on a Mac running dotnet core 2.1
+Brushing up on data structures and learning F# on .NET Core
